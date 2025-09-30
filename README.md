@@ -58,25 +58,21 @@ npm start
 
 The frontend will run on: http://localhost:3000
 
-API Endpoints (Tested with Postman)
-Method	Endpoint	Description
-POST	/api/bugs	Create a new bug report
-GET	/api/bugs	Get all bug reports
-GET	/api/bugs/:id	Get a specific bug by ID
-PUT	/api/bugs/:id	Update a bug (status or assignment)
-DELETE	/api/bugs/:id	Delete a bug report
+## 🧪 Testing
 
-A Postman collection is included in /postman-collection for easy API testing.
+This project includes both manual and automated testing resources.
 
-Demo
+### 1. Test Documents
+- [Test Plan](docs/test-plan.md)
+- [Test Cases](docs/test-cases.md)
+- [Test Report](docs/test-report.md)
 
-Add screenshots or GIFs of the app UI here
+### 2. Postman API Testing
+- Import the collection: [`bug-tracker-collection.json`](postman/bug-tracker-collection.json)
+- Import environment (optional): [`bug-tracker-environment.json`](postman/bug-tracker-environment.json)
+- Step-by-step guide: [Postman Collection Guide](docs/postman-guide.md)
 
-Optionally, add a link to a screen recording video
 
-Contributing
-
-Contributions are welcome! Please submit a pull request or open an issue for improvements or bug fixes.
 
 Author
 
@@ -84,7 +80,6 @@ Maduka Sewwandi
 
 GitHub: https://github.com/MadukaSewwandi
 
-LinkedIn: [Your LinkedIn Profile URL]
 
 License
 
