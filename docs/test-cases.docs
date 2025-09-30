@@ -1,0 +1,11 @@
+# 🧪 Bug Tracker App - Test Cases
+
+| TC_ID  | Test Case Description                   | Pre-Condition      | Steps                                                                 | Expected Results                                     | Actual Results                                       | Status  |
+|--------|------------------------------------------|--------------------|----------------------------------------------------------------------|-----------------------------------------------------|-----------------------------------------------------|---------|
+| TC-001 | Verify user can register with valid details | App running locally | 1. Go to Register page <br> 2. Enter name, email, password <br> 3. Submit form | User should be registered and redirected to login page | User should be registered and redirected to login page | ✅ Passed |
+| TC-002 | Verify login works with valid credentials | TC-001 passed      | 1. Enter email and password <br> 2. Click Login | User should be redirected to dashboard | User should be redirected to dashboard | ✅ Passed |
+| TC-003 | Verify login fails with invalid password | User exists        | 1. Enter email + wrong password <br> 2. Click Login | Error message: "Invalid email or password" should display | Error message: "Invalid email or password" should display | ✅ Passed |
+| TC-004 | Verify user can create a new bug        | Logged-in user     | 1. Click "Add Bug" <br> 2. Fill bug title & description <br> 3. Submit form | New bug appears in bug list | New bug appears in bug list | ✅ Passed |
+| TC-005 | Verify user can edit bug                | Bug already created | 1. Click Edit on existing bug <br> 2. Change title <br> 3. Save | Bug updates in list | Bug updates in list | ✅ Passed |
+| TC-006 | Verify user can delete bug              | Bug already created | 1. Click Delete on bug <br> 2. Confirm action | Bug should be removed from list | Bug should be removed from list | ✅ Passed |
+| TC-007 | API Test: GET /bugs returns 200 OK      | Server running      | 1. Send GET request via Postman | Response code 200, array of bugs returned | Response code 200, array of bugs returned | ✅ Passed |
